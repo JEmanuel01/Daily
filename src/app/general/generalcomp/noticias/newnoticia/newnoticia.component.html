@@ -1,0 +1,74 @@
+<app-general></app-general>
+<div class="main">
+    <div class="contenedor">
+        <div class="maintext">
+            <h2 style="margin-left: 50%; font-family: 'Pacifico', cursive; font-size: 5rem;"><strong> Publicación </strong></h2>
+            <br/>
+            <h2><strong>Selecciona una imagen:</strong></h2>
+            <div class="foto">
+                <img class="imagen shadow-lg p-3 mb-5" style="margin-left: 40%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRec7TzcU7vtgZtJz4_XpX0jj9xnTTV6RfVGJ-AwSN41V_2R6kV">
+            </div>
+            <div class="form-group">
+                <div class="input-group mb-3" style="margin-left: 35%;">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                    <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+                  </div>
+                </div>
+            </div>
+              <h2><strong>Redacta tu noticia:</strong></h2>
+              <input type="text" style="width: 100%;" class="form-control" placeholder="Titulo de la noticia" >
+              <div class="form-group">
+                  <textarea style="width: 160%;" class="form-control noticiaprincipal" placeholder="Cuentanos tu noticia..." rows="10"></textarea>
+              </div>
+              <div style="margin-left: 5%;">
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
+                    <label class="custom-control-label" for="customRadio1">Activar comentarios</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio2">Desactivar comentarios</label>
+                  </div>
+              </div>
+              <hr style="width: 160%; margin-top: 1rem;"/>
+              <div class="datos">
+                  <i class='fas fa-user-circle' style="font-size:4.5rem; float:left; margin-right: 0.5rem;"></i>
+                  <div class="my-2 publicacion">
+                  <p class="text-left" style="margin-bottom: 0%;"><strong>Oscar Estrada <i class='fas fa-user-edit' style='font-size:15px'></i></strong></p>
+                  <p class="text-left small" style="margin-bottom: 0%;">oestrada.3@gmail.com <i class='fas fa-envelope'  style='font-size:15px'></i></p> 
+                  <br/>
+              </div>
+              <button data-toggle="modal" data-target="#avisodepublicacion" style="margin-left: 130%; margin-top: -25%" class="btn btn-secondary">Enviar a revisión<i style="font-size:12px;margin-left: 5px;" class="fa">&#xf1d8;</i></button>
+        </div>
+    </div>
+</div>
+<br/>
+<br/>
+<footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Copyright &copy; DailyPlus 2018
+    </div>
+</footer>
+
+<div class="modal" id="avisodepublicacion" role="dialog" >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Esta noticia pasará a supervision de un editor en jefe de la aplicación. Él 
+             decidirá si su noticia puede ser publicada, cualquier consulta comunicarse con 
+             uno de ellos. Una vez publicada la noticia, ésta no podra ser editada, unicamente borrada.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" routerLink="/noticias">Save changes</button>
+          <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
