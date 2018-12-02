@@ -7,6 +7,7 @@ import { GeneralComponent } from '../general/general.component';
 import { AboutComponent } from '../inicio/iniciocomp/about/about.component';
 import { ContactComponent } from '../inicio/iniciocomp/contact/contact.component';
 import { NoticiasComponent } from '../general/generalcomp/noticias/noticias.component';
+import { NewnoticiaComponent } from '../general/generalcomp/noticias/newnoticia/newnoticia.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'noticias', component: NoticiasComponent },
+  { path: 'newnoticia', component: NewnoticiaComponent },
 ];
 
 @NgModule({

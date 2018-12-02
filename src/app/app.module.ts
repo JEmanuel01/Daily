@@ -9,6 +9,7 @@ import { AboutComponent } from './inicio/iniciocomp/about/about.component';
 import { ContactComponent } from './inicio/iniciocomp/contact/contact.component';
 import { GeneralComponent } from './general/general.component';
 import { NoticiasComponent } from './general/generalcomp/noticias/noticias.component';
+import { NewnoticiaComponent } from './general/generalcomp/noticias/newnoticia/newnoticia.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NoticiasComponent } from './general/generalcomp/noticias/noticias.compo
     AboutComponent,
     ContactComponent,
     GeneralComponent,
-    NoticiasComponent
+    NoticiasComponent,
+    NewnoticiaComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,318 @@
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #161616 !default;
+$primary: #64a19d !default;
+
+.main{
+    background: linear-gradient(to bottom, #{fade-out($black, .9)} 0%,#{fade-out($black, .5)} 75%,$black 100%), url('https://st.depositphotos.com/2130737/3141/i/950/depositphotos_31413815-stock-photo-the-crumpled-standard-sheet.jpg');    margin-top: -3rem;
+    padding-top: 3%;
+    height: 100%;
+    h1{ 
+        font-size: 5rem;
+        text-align: center;
+        font-family: 'Lobster', cursive;
+        background: -webkit-linear-gradient(left top, gray, black);
+        background: linear-gradient(to bottom right, gray, black);
+        -webkit-background-clip: text;  
+        -webkit-text-fill-color: transparent;  
+    }
+}
+
+.dailynew{
+    margin-top: -2%;
+    padding-bottom: 0.2rem;
+    margin-bottom: 1rem;
+    vertical-align: auto;
+}
+
+.linea{
+    color: black;
+    border: 1rem;
+}
+
+.contenedor{
+    background-color: whitesmoke;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-shadow: 2px -2px 83px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px -2px 83px 1px rgba(0,0,0,0.75);
+    box-shadow: 2px -2px 83px 1px rgba(0,0,0,0.75);
+    overflow: hidden;
+}
+
+.separador{   
+    position: absolute;
+    top: 88%;
+    left: 36%;
+    width: 48%;
+    transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+}
+.maintext{
+    width: 64%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: justify;
+}
+
+.foto{
+    padding-top: 1.5rem;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+    margin-bottom: 0.9rem;
+    height: 20rem;
+    width: 42rem;
+}
+
+.imagen{
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.noticiaprincipal{
+    background-color: white;
+    width: 100%;
+    text-align: justify;
+    resize: none;
+    margin-top: 1rem;
+}
+
+.detalle{
+    margin-left: 65%;
+    position: relative;
+    top: -41rem;
+    height: 5rem;  
+}
+
+.publicacion{
+    padding-top: 1rem;
+}
+
+// ======================================================================COMENTARIOS====================================================
+
+ * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    color: #03658c;
+    text-decoration: none;
+}
+
+ul {
+   list-style-type: none;
+}
+
+body {
+   font-family: 'Roboto', Arial, Helvetica, Sans-serif, Verdana;
+   background: #dee1e3;
+}
+
+/** ====================
+* Lista de Comentarios
+=======================*/
+.insertarcomentario{
+    background-color: white;
+    width: 90%;
+    margin-left: auto + 1rem;
+    margin-right: auto;
+    text-align: justify;
+    resize: none;
+    -webkit-box-shadow: 6px 6px 34px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 34px -12px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 34px -12px rgba(0,0,0,0.75);
+}
+
+.comments-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 22rem;
+    max-height: 20rem;
+    overflow-y: scroll;
+}
+
+.comments-container h1 {
+   font-size: 36px;
+   color: #283035;
+   font-weight: 400;
+}
+
+.comments-container h1 a {
+   font-size: 18px;
+   font-weight: 700;
+}
+
+.comments-list {
+   margin-top: 30px;
+   position: relative;
+}
+
+/**
+* Caja del Comentario
+---------------------------*/
+.comments-list .comment-box {
+   width: 20rem;
+   position: relative;
+   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+   -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+   box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+}
+
+.comments-list .comment-box:before, .comments-list .comment-box:after {
+   content: '';
+   height: 0;
+   width: 0;
+   position: absolute;
+   display: block;
+   border-width: 10px 12px 10px 0;
+   border-style: solid;
+   border-color: transparent #FCFCFC;
+   top: 8px;
+   left: -11px;
+}
+
+.comments-list .comment-box:before {
+   border-width: 11px 13px 11px 0;
+   border-color: transparent rgba(0,0,0,0.05);
+   left: -12px;
+}
+
+.reply-list .comment-box {
+   width: 610px;
+}
+.comment-box .comment-head {
+   background: #FCFCFC;
+   padding: 10px 12px;
+   border-bottom: 1px solid #E5E5E5;
+   overflow: hidden;
+   -webkit-border-radius: 4px 4px 0 0;
+   -moz-border-radius: 4px 4px 0 0;
+   border-radius: 4px 4px 0 0;
+}
+
+.comment-box .comment-head i {
+   float: right;
+   margin-left: 14px;
+   position: relative;
+   top: 2px;
+   color: #A6A6A6;
+   cursor: pointer;
+   -webkit-transition: color 0.3s ease;
+   -o-transition: color 0.3s ease;
+   transition: color 0.3s ease;
+}
+
+.comment-box .comment-head i:hover {
+   color: #03658c;
+}
+
+.comment-box .comment-name {
+   color: #283035;
+   font-size: 14px;
+   font-weight: 700;
+   float: left;
+   margin-right: 10px;
+}
+
+.comment-box .comment-name a {
+   color: #283035;
+}
+
+.comment-box .comment-head span {
+   float: left;
+   color: #999;
+   font-size: 13px;
+   position: relative;
+   top: 1px;
+}
+
+.comment-box .comment-content {
+   background: #FFF;
+   padding: 12px;
+   font-size: 15px;
+   color: #595959;
+   -webkit-border-radius: 0 0 4px 4px;
+   -moz-border-radius: 0 0 4px 4px;
+   border-radius: 0 0 4px 4px;
+}
+
+.comment-box .comment-name.by-author, .comment-box .comment-name.by-author a {color: #03658c;}
+.comment-box .comment-name.by-author:after {
+   content: 'autor';
+   background: #03658c;
+   color: #FFF;
+   font-size: 12px;
+   padding: 3px 5px;
+   font-weight: 700;
+   margin-left: 10px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+}
+
+/** =====================
+* Responsive
+========================*/
+@media only screen and (max-width: 766px) {
+   .comments-container {
+       width: 480px;
+   }
+
+   .comments-list .comment-box {
+       width: 390px;
+   }
+
+   .reply-list .comment-box {
+       width: 320px;
+   }
+}
+
+// ====================================================================================Footer=======================================
+a {
+    color: $primary;
+    &:focus,
+    &:hover {
+      text-decoration: none;
+      color: darken($primary, 20%);
+    }
+  }
+  
+  .bg-black {
+    background-color: $black !important;
+  }
+  
+  .bg-primary {
+    background-color: $primary !important;
+  }
+  
+  .text-primary {
+    color: $primary !important;
+  }
+  
+  footer {
+    padding: 5rem 0;
+  }
+
+  .container{
+  height: 100%;
+  align-content: center;
+  }
